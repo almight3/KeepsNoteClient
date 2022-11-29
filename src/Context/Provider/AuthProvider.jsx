@@ -6,7 +6,7 @@ function AuthProvider({children}) {
    const [state,dispatch] = useReducer(authReducer,{
     token:localStorage.getItem('token') ? JSON.parse(localStorage.getItem('token')) : null,
     user:{},
-    isAuthenticated:token ? true : false,
+    isAuthenticated:localStorage.getItem('token') ? true : false,
    }) 
 
   return (
@@ -18,4 +18,4 @@ function AuthProvider({children}) {
 
 const useAuth = ()=>useContext(AuthContex)
 
-export default AuthProvider
+export { AuthProvider,useAuth };
