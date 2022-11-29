@@ -10,7 +10,7 @@ export const authReducer = (state,action)=>{
   switch(action.type){
     case SIGNUP_USER:
     case LOGIN_USER:{
-        return{
+       return{
             ...state,
             user:action.payload.user,
             token:action.payload.token,
