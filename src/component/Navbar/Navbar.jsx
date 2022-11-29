@@ -3,7 +3,7 @@ import {FaUser} from "react-icons/fa"
 
 function Navbar() {
   return (
-   <nav className='bg-secondary text-midnight h-20 w-[85%] ml-[15%]'>
+   <nav className='bg-secondary text-midnight h-[4.5rem] w-[85%] ml-[15%]'>
        <ul className='flex items-center h-full	'>
           <li className='text-2xl grow'>
              KeepsNote
