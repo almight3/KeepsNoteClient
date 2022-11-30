@@ -1,2 +1,2 @@
-export const KEEPNOTESAPI = "http://localhost:5000"
-
+const  KEEPNOTESAPI = "https://lime-sleepy-tuna.cyclic.app"
+export default KEEPNOTESAPI
