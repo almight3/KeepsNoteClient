@@ -46,7 +46,7 @@ function SideBar() {
               </li>
           </Link>
           {
-          isAuthenticated ? <li className='p-3 w-5/6 mx-auto flex justify-center cursor-pointer' onClick={handelLogout}>
+          isAuthenticated ? <li className={location.pathname === "/logout" ? active :inactive} onClick={handelLogout}>
              <CiLogout size={30} className="mx-2"/> 
              <span className='text-lg'>Logout</span>
           </li> : 
